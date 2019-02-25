@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lc_xxx.prueba.actDatos"
+    android:background="?android:attr/navigationBarColor"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Datos de la persona"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Nombre"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Ingrese nombre"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtNombre"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Apellido"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Ingrese apellido"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtApellido"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Teléfono"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Ingrese teléfono"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtTelefono"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Dirección"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Ingrese su direccion"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtDireccion"
+            android:textColor="@android:color/holo_orange_dark"
+            android:background="@android:color/white"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColor="@android:color/white"
+            android:text="País"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:id="@+id/cboPais" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    >
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Guardar"
+        android:id="@+id/btnSiguiente"
+        />
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

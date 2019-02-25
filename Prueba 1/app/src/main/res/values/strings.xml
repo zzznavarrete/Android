@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Prueba</string>
+    <string name="titutomenu">Menú</string>
+    <string name="hola">Bienvenido!</string>
+    <string name="clear">Limpiar</string>
+    <string name="entrar">Ingresar Usuario</string>
+    <string name="welcome">Ingrese al sistema!</string>
+    <string name="user">Usuario:</string>
+    <string name="hint_user">Ingrese usuario</string>
+    <string name="password">Contraseña:</string>
+    <string name="hint_pass">*********</string>
+    <string name="btn_entrar">Entrar!</string>
+    <string name="btn_cancelar">delete *</string>
+</resources>
