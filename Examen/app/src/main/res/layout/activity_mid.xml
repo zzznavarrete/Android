@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/otherWhite"
+    tools:context="com.example.nicomscr.betaprueba3.Activity.Mid">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Bienvenido doctor/a "
+
+
+            android:textSize="40dp" />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:id="@+id/txtNombreG"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/fotoGogle"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:background="@color/colorAccent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    <ImageButton
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:onClick="goMedico"
+            app:srcCompat="@mipmap/i_mini_doc"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:text="Doctor"
+        android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/otherWhite"
+            />
+        <ImageButton
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/i_mini_pill"
+            android:onClick="goMedicamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicamento"
+            android:layout_marginRight="10dp"
+
+            android:textColor="@color/otherWhite"
+            android:background="@color/otherWhite"
+            />
+
+        <ImageButton
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/i_mini_book"
+            android:onClick="goHistorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicamento"
+            android:textColor="@color/otherWhite"
+            android:background="@color/otherWhite"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BetaPrueba3</string>
+    <string name="facebook_app_id">302843390212252</string>
+    <string name="fb_login_protocol_scheme">fb302843390212252</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_medicamento">Menú Medicamento</string>
+    <string name="title_activity_menu_doctor">Menú Doctor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_historial_medico">Historial_medico</string>
+    <string name="salir">Salir</string>
+</resources>

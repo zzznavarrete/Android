@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/otherWhite"
+    tools:context="com.example.nicomscr.betaprueba3.Fragments.Paciente.F_EliminarP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="120dp"
+            app:srcCompat="@mipmap/i_eliminar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9"
+        android:layout_marginLeft="30px"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.6"
+            android:textSize="30px"
+
+            android:text="Rut"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:textSize="40px"
+
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/cboEliminarP" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="60px"
+        android:id="@+id/btnEliminarP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/otherWhite"
+
+        android:onClick="eliminar"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

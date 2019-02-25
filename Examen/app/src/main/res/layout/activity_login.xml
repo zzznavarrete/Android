@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_login"
+    android:background="@color/otherWhite"
+    tools:context="com.example.nicomscr.betaprueba3.Activity.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/foto_es"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/i_tittle_es_test" />
+
+        <ImageView
+            android:id="@+id/foto_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/i_tittle_en_test" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/foto_jp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/i_tittle_jp_test" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-20dp"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/i_txt_user"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:maxLength="45"
+            android:textColor="@color/otherWhite"
+            android:layout_weight="3"
+            android:inputType="textEmailAddress"
+            android:background="@color/colorAccent"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+        <ImageView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/i_txt_pass"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:maxLength="45"
+            android:textColor="@color/otherWhite"
+            android:inputType="textPassword"
+            android:layout_weight="3"
+            android:background="@color/colorAccent"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:text="Login"
+            android:layout_weight="2"
+            android:id="@+id/btnLogin"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginLeft="10px"
+
+            android:text="Registrarme"
+            android:background="@color/colorPrimaryDark"
+
+            android:layout_weight="2"
+            android:id="@+id/btnGoRegistro"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="4">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+        </com.google.android.gms.common.SignInButton>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnFaceTEST"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            />
+    </LinearLayout>
+
+    <!-- Si se quiere testear el inicio de sesión con face, des- comentar esta línea-*/-<Button
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:text="Testear login FACE"
+    android:onClick="goTest"
+    />
+
+-->
+
+
+
+
+</LinearLayout>
+

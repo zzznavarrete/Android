@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/otherWhite"
+    tools:context="com.example.nicomscr.betaprueba3.Activity.Menus2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/i_doc"
+                android:background="@color/otherWhite"
+                android:textColor="@color/otherWhite"
+                android:onClick="goMedicoMenu"
+                android:text="Medicamento" />
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/i_pill"
+                android:background="@color/otherWhite"
+                android:textColor="@color/otherWhite"
+                android:onClick="goMedicamentoMenu"
+                android:text="Medicamento" />
+
+            <ImageButton
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/i_book3"
+                android:background="@color/otherWhite"
+                android:textColor="@color/otherWhite"
+                android:onClick="goHistorial"
+                android:text="Medicamento" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

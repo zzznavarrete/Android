@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/otherWhite"
+    tools:context="com.example.nicomscr.betaprueba3.Fragments.Medicamento.F_AgregarM">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="120dp"
+            app:srcCompat="@mipmap/i_agregar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_marginTop="25px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="40px"
+            android:textStyle="bold"
+
+            android:text="Nombre"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Ej: Xanax | Alprazolam"
+            android:textSize="40px"
+            android:id="@+id/txtNombreM"
+            android:maxLength="10"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_marginTop="25px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:textStyle="bold"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="40px"
+            android:text="Lab"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:textSize="70px"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:id="@+id/cboLab" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_marginTop="25px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:textStyle="bold"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="40px"
+            android:text="Miligramos"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Ej: 2.5"
+            android:textSize="40px"
+            android:inputType="numberDecimal"
+            android:id="@+id/txtMiligramos"
+            android:maxLength="5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="75px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        >
+
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="10px"
+            android:id="@+id/btnAgregarM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Agregar"
+            />
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginLeft="10px"
+            android:id="@+id/btnCancelarM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Delete *"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
