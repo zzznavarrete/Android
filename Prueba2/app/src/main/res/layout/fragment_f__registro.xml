@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lc_xxx.prueba2.Fragments.F_Registro">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="Registro"
+        android:gravity="center"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="5"
+       android:layout_marginTop="30dp"
+       android:layout_marginLeft="10dp"
+       >
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_weight="2"
+           android:text="Usuario:"
+           />
+       <EditText
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:hint="Ingrese user"
+           android:maxLength="6"
+           android:id="@+id/txtUser"
+           />
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:text="Pass:"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:id="@+id/txtPass1"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:text="Repita pass"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:id="@+id/txtPass2"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_marginTop="60px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+    android:weightSum="4">
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="0dp"
+        android:background="@color/colorPrimary"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginRight="10px"
+        android:text="Crear" />
+
+    <Button
+        android:layout_marginLeft="10px"
+        android:id="@+id/btnCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+
+        android:layout_weight="2"
+        android:text="Delete *" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="3"
+
+        >
+
+        <Button
+            android:id="@+id/btnGoLogin"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Ir al login" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:layout_marginLeft="100px"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/cat_vet" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

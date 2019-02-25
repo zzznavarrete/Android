@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lc_xxx.prueba2.Fragments.F_Login">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="70px"
+        android:text="Veterinaria App"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20px"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        android:layout_height="310dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/vets_png" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:text="Usuario"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:maxLength="6"
+            android:id="@+id/txtUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="10dp"
+            android:hint="Ingrese usuario"
+            android:textSize="20dp"
+            android:background="@android:color/holo_orange_dark"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:text="Contraseña"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/txtPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="10dp"
+            android:hint="**************"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:background="@android:color/holo_orange_dark"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:text="Ingresar"
+            android:textSize="16dp"
+            android:onClick="Ingreso"
+            android:background="@color/colorPrimary"
+            />
+
+        <Button
+            android:id="@+id/btnGoRegistro"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:text="Registrar"
+            android:textSize="16dp"
+            android:onClick="GoRegistro"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Nicolás Neira y Rodrigo Jimenez"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

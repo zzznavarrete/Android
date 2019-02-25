@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lc_xxx.prueba2.Fragments.F_Eliminar">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Mascota"
+        android:textSize="40px"
+        android:layout_marginTop="30px"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9"
+        android:layout_marginLeft="30px"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.6"
+            android:textSize="30px"
+
+            android:text="Nombre"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:textSize="40px"
+
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/cboEliminar" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="60px"
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:background="@color/colorPrimary"
+
+        android:onClick="eliminar"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
